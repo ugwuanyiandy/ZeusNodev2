@@ -514,6 +514,11 @@ img.news-card-bg {
     position: absolute;
     pointer-events: none;
 }
+@media screen and (max-width: 768px) {
+    img.news-card-bg {
+        display: none;
+    }
+}
 
 .news-card-title {
     color: #fff;
