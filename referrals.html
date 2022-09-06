@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zeus Node | Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--  css style-->
+  <link rel="stylesheet" href="assets/style.css">
+
+  <!--Icons-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-toggle">
+<div class="sidebar">
+  <div class="sidebar-brand">
+    <a href="index.html" class="sidebar-link">
+      <img src="assets/images/zeuslogo2.png" class="sidebar-logo">
+    </a>
+  </div>
+
+  <ul class="side-menu">
+
+    <li class="menu-link">
+      <a href="index.html" class="menu-content">
+        <i class="uil uil-apps"></i>
+        <span class="menu-link-text">Dashboard</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="invest.html" class="menu-content">
+        <i class="uil uil-money-stack"></i>
+        <span class="menu-link-text">Invest</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="staking.html" class="menu-content">
+        <i class="uil uil-money-withdraw"></i>
+        <span class="menu-link-text">Earn</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="lottery.html" class="menu-content">
+        <i class="uil uil-play-circle"></i>
+        <span class="menu-link-text">Play</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="#" class="menu-content">
+        <i class="uil uil-user-check"></i>
+        <span class="menu-link-text">Validator</span>
+      </a>
+    </li>
+
+    <li class="menu-link active">
+      <a href="referrals.html" class="menu-content">
+        <i class="uil uil-user-plus"></i>
+        <span class="menu-link-text">Referrals</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="calculator.html" class="menu-content">
+        <i class="uil uil-calculator"></i>
+        <span class="menu-link-text">Calculator</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="#" class="menu-content">
+        <i class="uil uil-newspaper"></i>
+        <span class="menu-link-text">Olympus Post</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="#" class="menu-content">
+        <i class="uil uil-file-alt"></i>
+        <span class="menu-link-text">Documents</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div class="main-content">
+  <div class="top-nav">
+    <div class="container">
+      <button class="btn btn-primary">
+        <i class="uil uil-link-h"></i>
+        Connect Wallet
+      </button>
+
+      <button class="btn btn-primary menu-toggle-btn">
+        <label for="nav-toggle" class="">
+          <i class="uil uil-bars nav-open"></i>
+          <i class="uil uil-times nav-close"></i>
+        </label>
+      </button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="page-title dash-title">
+      REFERRALS
+      <div class="title-underline">
+        <img src="./assets/images/undline.png" class="">
+      </div>
+    </div>
+
+    <div class="page-section">
+      <div class="referral-summary">
+        <div class="rewards-summary glass-card">
+          <div class="rewards-summary-title">My Referral Rewards</div>
+
+          <div class="rewards-summary-value gold-text">0 <span class="rewards-currency">ZEUS</span></div>
+          <div class="rewards-summary-usd">$0.00</div>
+        </div>
+
+        <div class="rewards-summary-tiers glass-card">
+          <div class="rewards-summary-title">My Referral Nodes</div>
+
+          <div class="rewards-tier-cards">
+            <div class="rewards-tier-card">
+              <div class="tier-card-title silver-text">HERCULES</div>
+              <div class="claim-title-underline">
+                <img src="./assets/images/undlinesm.png">
+              </div>
+              <div class="tier-card-value silver-text">0.00</div>
+            </div>
+
+            <div class="rewards-tier-card">
+              <div class="tier-card-title silver-text">HERA</div>
+              <div class="claim-title-underline">
+                <img src="./assets/images/undlinesm.png">
+              </div>
+              <div class="tier-card-value silver-text">0.00</div>
+            </div>
+
+            <div class="rewards-tier-card">
+              <div class="tier-card-title silver-text">ZEUS</div>
+              <div class="claim-title-underline">
+                <img src="./assets/images/undlinesm.png">
+              </div>
+              <div class="tier-card-value silver-text">0.00</div>
+            </div>
+
+            <div class="rewards-tier-card">
+              <div class="tier-card-title silver-text">KRONOS</div>
+              <div class="claim-title-underline">
+                <img src="./assets/images/undlinesm.png">
+              </div>
+              <div class="tier-card-value silver-text">0.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-section">
+      <div class="referral-how-to glass-card">
+        <div class="how-to-grid">
+          <div class="how-to-text">
+            <div class="how-to-title">How to get referral rewards</div>
+            <div class="how-to-points">
+              <div class="how-to-point">- Create a Node. (You must be a node owner)</div>
+              <div class="how-to-point">- Copy the unique link in your Referral tab.</div>
+              <div class="how-to-point">- Share the link with your friends, ask them to create a node.</div>
+              <div class="how-to-point">- Once they do, you'll get a 0.05% commission, on the amount used to create a node.</div>
+            </div>
+          </div>
+
+          <div class="referral-code">
+            <div class="referral-code-title">My referral link</div>
+            <div class="referral-link-code">
+              <div class="blue-input-box">
+                <input type="text" class="referral-text blue-input" placeholder="https://app.zeusnode.finance/ref-0x4491299022db2e0" readonly>
+              </div>
+              <button class="btn btn-primary btn-sm">
+                <i class="uil uil-copy"></i> Copy
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-section">
+      <div class="referrals-history-table table-responsive glass-card">
+        <table class="table">
+          <thead>
+          <tr>
+            <th>Referral Wallet</th>
+            <th>Bought Nodes</th>
+            <th>My Commission</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>0x4fBfC9F6bF774703276D97fceD6021d2515f875E</td>
+            <td>$4500.00</td>
+            <td>$4.50</td>
+          </tr>
+
+          <tr>
+            <td>0x4fBfC9F6bF774703276D97fceD6021d2515f875E</td>
+            <td>$4500.00</td>
+            <td>$4.50</td>
+          </tr>
+
+          <tr>
+            <td>0x4fBfC9F6bF774703276D97fceD6021d2515f875E</td>
+            <td>$4500.00</td>
+            <td>$4.50</td>
+          </tr>
+
+          <tr>
+            <td>0x4fBfC9F6bF774703276D97fceD6021d2515f875E</td>
+            <td>$4500.00</td>
+            <td>$4.50</td>
+          </tr>
+
+          <tr>
+            <td>0x4fBfC9F6bF774703276D97fceD6021d2515f875E</td>
+            <td>$4500.00</td>
+            <td>$4.50</td>
+          </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

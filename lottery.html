@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zeus Node | Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--  css style-->
+  <link rel="stylesheet" href="assets/style.css">
+
+  <!--Icons-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-toggle">
+<div class="sidebar">
+  <div class="sidebar-brand">
+    <a href="index.html" class="sidebar-link">
+      <img src="assets/images/zeuslogo2.png" class="sidebar-logo">
+    </a>
+  </div>
+
+  <ul class="side-menu">
+
+    <li class="menu-link">
+      <a href="index.html" class="menu-content">
+        <i class="uil uil-apps"></i>
+        <span class="menu-link-text">Dashboard</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="invest.html" class="menu-content">
+        <i class="uil uil-money-stack"></i>
+        <span class="menu-link-text">Invest</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="staking.html" class="menu-content">
+        <i class="uil uil-money-withdraw"></i>
+        <span class="menu-link-text">Earn</span>
+      </a>
+    </li>
+
+    <li class="menu-link active">
+      <a href="lottery.html" class="menu-content">
+        <i class="uil uil-play-circle"></i>
+        <span class="menu-link-text">Play</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="#" class="menu-content">
+        <i class="uil uil-user-check"></i>
+        <span class="menu-link-text">Validator</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="referrals.html" class="menu-content">
+        <i class="uil uil-user-plus"></i>
+        <span class="menu-link-text">Referrals</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="calculator.html" class="menu-content">
+        <i class="uil uil-calculator"></i>
+        <span class="menu-link-text">Calculator</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="#" class="menu-content">
+        <i class="uil uil-newspaper"></i>
+        <span class="menu-link-text">Olympus Post</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="#" class="menu-content">
+        <i class="uil uil-file-alt"></i>
+        <span class="menu-link-text">Documents</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div class="main-content">
+  <div class="top-nav">
+    <div class="container">
+      <button class="btn btn-primary">
+        <i class="uil uil-link-h"></i>
+        Connect Wallet
+      </button>
+
+      <button class="btn btn-primary menu-toggle-btn">
+        <label for="nav-toggle" class="">
+          <i class="uil uil-bars nav-open"></i>
+          <i class="uil uil-times nav-close"></i>
+        </label>
+      </button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="page-title dash-title">
+      LOTTERY
+      <div class="title-underline">
+        <img src="./assets/images/undline.png" class="">
+      </div>
+    </div>
+
+    <div class="page-section">
+      <div class="lottery-cards">
+        <div class="lottery-card glass-card">
+          <div class="lottery-card-title">
+            Wallet Balance
+          </div>
+          <div class="lottery-card-value gold-text">0  <span class="card-value-currency">ZEUS</span></div>
+          <div class="lottery-card-usd">$0.00</div>
+        </div>
+
+        <div class="lottery-card glass-card">
+          <div class="lottery-card-title">
+            Lottery ID
+          </div>
+          <div class="lottery-card-value gold-text">11</div>
+          <div class="lottery-card-usd">$0.00</div>
+        </div>
+
+        <div class="lottery-card glass-card">
+          <div class="lottery-card-title">
+            Ticket Price
+          </div>
+          <div class="lottery-card-value gold-text">10  <span class="card-value-currency">ZEUS</span></div>
+          <div class="lottery-card-usd">$0.00</div>
+        </div>
+
+        <div class="lottery-card glass-card">
+          <div class="lottery-card-title">
+            My Owned Tickets
+          </div>
+          <div class="lottery-card-value gold-text">0</div>
+        </div>
+
+        <div class="lottery-card glass-card">
+          <div class="lottery-card-title">
+            Tickets Sold
+          </div>
+          <div class="lottery-card-value gold-text">54/500</div>
+        </div>
+
+        <div class="lottery-card glass-card">
+          <div class="lottery-card-title">
+            Lottery Prize Pool
+          </div>
+          <div class="lottery-card-value gold-text">324/3000 <span class="card-value-currency">ZEUS</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-section">
+
+    </div>
+
+    <div class="glass-card lottery-winners">
+      <div class="lottery-winners-card-title">Lottery Winners</div>
+      <div class="lottery-winners-table table-responsive">
+        <table class="table">
+          <thead>
+          <tr>
+            <th>Ranking</th>
+            <th>Winners</th>
+            <th>Percentage</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>1</td>
+            <td>0x4fBfC9F6bF774703276D97fceD6021d2515f875E</td>
+            <td>50%</td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td>0x4fBfC9F6bF774703276D97fceD6021d2515f875E</td>
+            <td>50%</td>
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td>0x4fBfC9F6bF774703276D97fceD6021d2515f875E</td>
+            <td>50%</td>
+          </tr>
+
+          <tr>
+            <td>4</td>
+            <td>0x4fBfC9F6bF774703276D97fceD6021d2515f875E</td>
+            <td>50%</td>
+          </tr>
+
+          <tr>
+            <td>5</td>
+            <td>0x4fBfC9F6bF774703276D97fceD6021d2515f875E</td>
+            <td>50%</td>
+          </tr>
+
+          <tr>
+            <td>6</td>
+            <td>0x4fBfC9F6bF774703276D97fceD6021d2515f875E</td>
+            <td>50%</td>
+          </tr>
+
+          <tr>
+            <td>7</td>
+            <td>0x4fBfC9F6bF774703276D97fceD6021d2515f875E</td>
+            <td>50%</td>
+          </tr>
+
+          <tr>
+            <td>8</td>
+            <td>0x4fBfC9F6bF774703276D97fceD6021d2515f875E</td>
+            <td>50%</td>
+          </tr>
+
+          <tr>
+            <td>9</td>
+            <td>0x4fBfC9F6bF774703276D97fceD6021d2515f875E</td>
+            <td>50%</td>
+          </tr>
+
+          <tr>
+            <td>10</td>
+            <td>0x4fBfC9F6bF774703276D97fceD6021d2515f875E</td>
+            <td>50%</td>
+          </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

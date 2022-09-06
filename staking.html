@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zeus Node | Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--  css style-->
+  <link rel="stylesheet" href="assets/style.css">
+
+  <!--Icons-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-toggle">
+<div class="sidebar">
+  <div class="sidebar-brand">
+    <a href="index.html" class="sidebar-link">
+      <img src="assets/images/zeuslogo2.png" class="sidebar-logo">
+    </a>
+  </div>
+
+  <ul class="side-menu">
+
+    <li class="menu-link">
+      <a href="index.html" class="menu-content">
+        <i class="uil uil-apps"></i>
+        <span class="menu-link-text">Dashboard</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="invest.html" class="menu-content">
+        <i class="uil uil-money-stack"></i>
+        <span class="menu-link-text">Invest</span>
+      </a>
+    </li>
+
+    <li class="menu-link active">
+      <a href="staking.html" class="menu-content">
+        <i class="uil uil-money-withdraw"></i>
+        <span class="menu-link-text">Earn</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="lottery.html" class="menu-content">
+        <i class="uil uil-play-circle"></i>
+        <span class="menu-link-text">Play</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="#" class="menu-content">
+        <i class="uil uil-user-check"></i>
+        <span class="menu-link-text">Validator</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="referrals.html" class="menu-content">
+        <i class="uil uil-user-plus"></i>
+        <span class="menu-link-text">Referrals</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="calculator.html" class="menu-content">
+        <i class="uil uil-calculator"></i>
+        <span class="menu-link-text">Calculator</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="#" class="menu-content">
+        <i class="uil uil-newspaper"></i>
+        <span class="menu-link-text">Olympus Post</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="#" class="menu-content">
+        <i class="uil uil-file-alt"></i>
+        <span class="menu-link-text">Documents</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div class="main-content">
+  <div class="top-nav">
+    <div class="container">
+      <button class="btn btn-primary">
+        <i class="uil uil-link-h"></i>
+        Connect Wallet
+      </button>
+
+      <button class="btn btn-primary menu-toggle-btn">
+        <label for="nav-toggle" class="">
+          <i class="uil uil-bars nav-open"></i>
+          <i class="uil uil-times nav-close"></i>
+        </label>
+      </button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="page-title dash-title">
+      STAKING
+      <div class="title-underline">
+        <img src="./assets/images/undline.png" class="">
+      </div>
+    </div>
+
+    <div class="page-section">
+      <div class="stake-duration">
+        <div class="duration-title">Staking Duration</div>
+        <div class="staking-times">
+          <div class="duration-button active">All</div>
+          <div class="duration-button">30 Days</div>
+          <div class="duration-button">60 Days</div>
+          <div class="duration-button">90 Days</div>
+        </div>
+      </div>
+
+      <div class="staking-summary">
+        <div class="stake-total-card glass-card">
+          <div class="stake-card-title">Total Staked</div>
+          <div class="stake-card-value gold-text">342,109.009 <span class="value-currency">ZEUS</span></div>
+          <div class="stake-card-usd">$142,908.07</div>
+
+          <div class="stake-emissions">Daily Emissions: 2,250.09 USDC</div>
+        </div>
+
+        <div class="staking-summary-personal">
+          <div class="stake-unclaimed-card glass-card">
+            <div class="staking-card-title">Unclaimed</div>
+            <div class="staking-card-value gold-text">0</div>
+            <div class="stake-card-usd">$0.00</div>
+
+            <button class="btn btn-primary btn-sm btn-staking-card">
+              <i class="uil uil-money-withdrawal"></i> Claim Rewards
+            </button>
+
+            <div class="add-usdc-text">Add USDC to Wallet</div>
+          </div>
+
+          <div class="my-staking glass-card">
+            <div class="staking-card-title">My Stakings</div>
+            <div class="staking-card-value gold-text">0</div>
+            <div class="stake-card-usd">$0.00</div>
+
+            <button class="btn btn-primary btn-sm btn-staking-card">
+              <i class="uil uil-money-bill"></i> Buy Zeus
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-section">
+      <div class="staking-amount">
+        <div class="stake-toggle">
+          <div class="stake-switch active">Stake</div>
+          <span class="toggle-divider">|</span>
+          <div class="stake-switch">Unstake</div>
+        </div>
+        <div class="stake-balance">
+          Available Balance: <span class="balance-value">0.00 ZEUS</span>
+        </div>
+
+        <div class="stake-approve">
+          <div class="stake-input">
+            <input type="number" class="stake-input-field" placeholder="Please enter amount">
+            <div class="stake-max-label">MAX <span class="stake-available">(0.00)</span></div>
+          </div>
+          <button class="btn btn-primary stake-approve-btn"><i class="uil uil-check"></i> Approve</button>
+        </div>
+      </div>
+
+      <div class="glass-card staking-history">
+        <div class="staking-card-title staking-history-title">Staking History</div>
+        <div class="stake-history-table table-responsive">
+          <table class="table">
+            <thead>
+            <tr>
+              <th>ID</th>
+              <th>Amount</th>
+              <th>Reward</th>
+              <th>Unlock At</th>
+              <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>1</td>
+              <td>$250</td>
+              <td>$27.71</td>
+              <td>20-07-2022</td>
+              <td><button class="btn btn-primary">Claim</button></td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>$250</td>
+              <td>$27.71</td>
+              <td>20-07-2022</td>
+              <td><button class="btn btn-primary">Claim</button></td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>$250</td>
+              <td>$27.71</td>
+              <td>20-07-2022</td>
+              <td><button class="btn btn-primary">Claim</button></td>
+            </tr>
+
+            <tr>
+              <td>4</td>
+              <td>$250</td>
+              <td>$27.71</td>
+              <td>20-07-2022</td>
+              <td><button class="btn btn-primary">Claim</button></td>
+            </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
