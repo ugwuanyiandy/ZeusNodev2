@@ -98,6 +98,10 @@
     scroll-behavior: smooth;
 }
 
+body {
+    background: #060C2C;
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
