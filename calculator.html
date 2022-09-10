@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zeus Node | Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--  css style-->
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+
+  <!--Icons-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-toggle">
+<div class="sidebar">
+  <div class="sidebar-brand">
+    <a href="index.html" class="sidebar-link">
+      <img src="assets/images/zeuslogo2.png" class="sidebar-logo">
+    </a>
+  </div>
+
+  <ul class="side-menu">
+
+    <li class="menu-link">
+      <a href="index.html" class="menu-content">
+        <i class="uil uil-apps"></i>
+        <span class="menu-link-text">Dashboard</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="invest.html" class="menu-content">
+        <i class="uil uil-money-stack"></i>
+        <span class="menu-link-text">Invest</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="staking.html" class="menu-content">
+        <i class="uil uil-money-withdraw"></i>
+        <span class="menu-link-text">Earn</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="lottery.html" class="menu-content">
+        <i class="uil uil-play-circle"></i>
+        <span class="menu-link-text">Play</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="#" class="menu-content">
+        <i class="uil uil-user-check"></i>
+        <span class="menu-link-text">Validator</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="referrals.html" class="menu-content">
+        <i class="uil uil-user-plus"></i>
+        <span class="menu-link-text">Referrals</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="bonding.html" class="menu-content">
+        <i class="uil uil-adjust-circle"></i>
+        <span class="menu-link-text">Bonding</span>
+      </a>
+    </li>
+
+    <li class="menu-link active">
+      <a href="calculator.html" class="menu-content">
+        <i class="uil uil-calculator"></i>
+        <span class="menu-link-text">Calculator</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="#" class="menu-content">
+        <i class="uil uil-newspaper"></i>
+        <span class="menu-link-text">Olympus Post</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="#" class="menu-content">
+        <i class="uil uil-file-alt"></i>
+        <span class="menu-link-text">Documents</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div class="main-content">
+  <div class="top-nav">
+    <div class="container">
+      <button class="btn btn-primary">
+        <i class="uil uil-link-h"></i>
+        Connect Wallet
+      </button>
+
+      <button class="btn btn-primary menu-toggle-btn">
+        <label for="nav-toggle" class="">
+          <i class="uil uil-bars nav-open"></i>
+          <i class="uil uil-times nav-close"></i>
+        </label>
+      </button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="page-title dash-title">
+      CALCULATOR
+      <div class="title-underline">
+        <img src="./assets/images/undline.png" class="">
+      </div>
+    </div>
+
+    <div class="page-section">
+      <div class="calc-section-title">Node Cost</div>
+
+      <div class="calc-tier-cards">
+        <div class="calc-tier">
+          <div class="glass-card calc-tier-top">
+            <div class="calc-tier-title silver-text">HERCULES</div>
+            <div class="claim-title-underline">
+              <img src="./assets/images/undlinesm.png">
+            </div>
+
+            <div class="calc-tier-form">
+              <div class="calc-form-group">
+                <label class="calc-form-label label-light">Node count</label>
+                <input type="number" class="calc-form-input readable" placeholder="Enter number of nodes">
+              </div>
+
+              <div class="calc-form-group">
+                <label class="calc-form-label">Cost (in ZEUS tokens)</label>
+                <input type="number" class="calc-form-input" placeholder="0" readonly>
+              </div>
+
+              <div class="calc-form-group">
+                <label class="calc-form-label">Daily Node Reward (ZEUS)</label>
+                <input type="number" class="calc-form-input" placeholder="0" readonly>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-tier-price glass-card">
+            <div class="calc-tier-price-top">
+              <div class="calc-tier-node-price">Purchase at $2.54 / node</div>
+              <div class="calc-tier-multiply">x 0</div>
+            </div>
+
+            <div class="calc-tier-price-bottom">
+              <div class="calc-tier-sum">$0.00</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="calc-tier">
+          <div class="glass-card calc-tier-top">
+            <div class="calc-tier-title silver-text">HERA</div>
+            <div class="claim-title-underline">
+              <img src="./assets/images/undlinesm.png">
+            </div>
+
+            <div class="calc-tier-form">
+              <div class="calc-form-group">
+                <label class="calc-form-label label-light">Node count</label>
+                <input type="number" class="calc-form-input readable" placeholder="0">
+              </div>
+
+              <div class="calc-form-group">
+                <label class="calc-form-label label-light">Cost (in ZEUS tokens)</label>
+                <input type="number" class="calc-form-input" placeholder="0" readonly>
+              </div>
+
+              <div class="calc-form-group">
+                <label class="calc-form-label label-light">Daily Node Reward (ZEUS)</label>
+                <input type="number" class="calc-form-input" placeholder="0" readonly>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-tier-price glass-card">
+            <div class="calc-tier-price-top">
+              <div class="calc-tier-node-price">Purchase at $2.54 / node</div>
+              <div class="calc-tier-multiply">x 0</div>
+            </div>
+
+            <div class="calc-tier-price-bottom">
+              <div class="calc-tier-sum">$0.00</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="calc-tier">
+          <div class="glass-card calc-tier-top">
+            <div class="calc-tier-title silver-text">ZEUS</div>
+            <div class="claim-title-underline">
+              <img src="./assets/images/undlinesm.png">
+            </div>
+
+            <div class="calc-tier-form">
+              <div class="calc-form-group">
+                <label class="calc-form-label label-light">Node count</label>
+                <input type="number" class="calc-form-input readable" placeholder="0">
+              </div>
+
+              <div class="calc-form-group">
+                <label class="calc-form-label label-light">Cost (in ZEUS tokens)</label>
+                <input type="number" class="calc-form-input" placeholder="0" readonly>
+              </div>
+
+              <div class="calc-form-group">
+                <label class="calc-form-label label-light">Daily Node Reward (ZEUS)</label>
+                <input type="number" class="calc-form-input" placeholder="0" readonly>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-tier-price glass-card">
+            <div class="calc-tier-price-top">
+              <div class="calc-tier-node-price">Purchase at $2.54 / node</div>
+              <div class="calc-tier-multiply">x 0</div>
+            </div>
+
+            <div class="calc-tier-price-bottom">
+              <div class="calc-tier-sum">$0.00</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="calc-tier">
+          <div class="glass-card calc-tier-top">
+            <div class="calc-tier-title silver-text">KRONOS</div>
+            <div class="claim-title-underline">
+              <img src="./assets/images/undlinesm.png">
+            </div>
+
+            <div class="calc-tier-form">
+              <div class="calc-form-group">
+                <label class="calc-form-label label-light">Node count</label>
+                <input type="number" class="calc-form-input readable" placeholder="0">
+              </div>
+
+              <div class="calc-form-group">
+                <label class="calc-form-label label-light">Cost (in ZEUS tokens)</label>
+                <input type="number" class="calc-form-input" placeholder="0" readonly>
+              </div>
+
+              <div class="calc-form-group">
+                <label class="calc-form-label label-light">Daily Node Reward (ZEUS)</label>
+                <input type="number" class="calc-form-input" placeholder="0" readonly>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-tier-price glass-card">
+            <div class="calc-tier-price-top">
+              <div class="calc-tier-node-price">Purchase at $2.54 / node</div>
+              <div class="calc-tier-multiply">x 0</div>
+            </div>
+
+            <div class="calc-tier-price-bottom">
+              <div class="calc-tier-sum">$0.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-section">
+      <div class="calc-earnings">
+        <div class="calc-earnings-claim">
+          <div class="calc-section-title">Earnings after tax</div>
+
+          <div class="claim-pct">
+            <label class="claim-pct-label">Claim Tax%</label>
+            <input type="number" class=" calc-form-input" placeholder="Enter claim tax %">
+          </div>
+        </div>
+
+        <div class="calc-earnings-table table-responsive">
+          <table class="table glass-card">
+            <thead>
+            <tr>
+              <th></th>
+              <th>Hercules</th>
+              <th>Hera</th>
+              <th>Zeus</th>
+              <th>Kronos</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <th>Daily</th>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <th>Weekly</th>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <th>30 Day Month</th>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <th>Yearly</th>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

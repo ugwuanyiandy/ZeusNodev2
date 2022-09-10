@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zeus Node | Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--  css style-->
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+
+  <!--Icons-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-toggle">
+<div class="sidebar">
+  <div class="sidebar-brand">
+    <a href="index.html" class="sidebar-link">
+      <img src="assets/images/zeuslogo2.png" class="sidebar-logo">
+    </a>
+  </div>
+
+  <ul class="side-menu">
+
+    <li class="menu-link">
+      <a href="index.html" class="menu-content">
+        <i class="uil uil-apps"></i>
+        <span class="menu-link-text">Dashboard</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="invest.html" class="menu-content">
+        <i class="uil uil-money-stack"></i>
+        <span class="menu-link-text">Invest</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="staking.html" class="menu-content">
+        <i class="uil uil-money-withdraw"></i>
+        <span class="menu-link-text">Earn</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="lottery.html" class="menu-content">
+        <i class="uil uil-play-circle"></i>
+        <span class="menu-link-text">Play</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="#" class="menu-content">
+        <i class="uil uil-user-check"></i>
+        <span class="menu-link-text">Validator</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="referrals.html" class="menu-content">
+        <i class="uil uil-user-plus"></i>
+        <span class="menu-link-text">Referrals</span>
+      </a>
+    </li>
+
+    <li class="menu-link active">
+      <a href="bonding.html" class="menu-content">
+        <i class="uil uil-adjust-circle"></i>
+        <span class="menu-link-text">Bonding</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="calculator.html" class="menu-content">
+        <i class="uil uil-calculator"></i>
+        <span class="menu-link-text">Calculator</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="#" class="menu-content">
+        <i class="uil uil-newspaper"></i>
+        <span class="menu-link-text">Olympus Post</span>
+      </a>
+    </li>
+
+    <li class="menu-link">
+      <a href="#" class="menu-content">
+        <i class="uil uil-file-alt"></i>
+        <span class="menu-link-text">Documents</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div class="main-content">
+  <div class="top-nav">
+    <div class="container">
+      <button class="btn btn-primary">
+        <i class="uil uil-link-h"></i>
+        Connect Wallet
+      </button>
+
+      <button class="btn btn-primary menu-toggle-btn">
+        <label for="nav-toggle" class="">
+          <i class="uil uil-bars nav-open"></i>
+          <i class="uil uil-times nav-close"></i>
+        </label>
+      </button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="page-title dash-title">
+      BONDING
+      <div class="title-underline">
+        <img src="./assets/images/undline.png" class="">
+      </div>
+    </div>
+
+    <div class="page-section">
+      <div class="bonding-header">
+        <div class="structure-detail" id="modalBtn">Bonding Structure<i class="uil uil-angle-right"></i></div>
+        <div class="new-bond">
+          <button class="btn btn-primary">Bond Token</button>
+        </div>
+      </div>
+
+      <div class="bonding-history-table table-responsive glass-card">
+        <table class="table">
+          <thead>
+          <tr>
+            <th>Bond Date</th>
+            <th>Total</th>
+            <th>Claimable</th>
+            <th>Claimed</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>4 days ago</td>
+            <td>1 Kronos</td>
+            <td>2.71 Zeus</td>
+            <td>0.00 Zeus</td>
+            <td><div class="pill success-pill">ACTIVE</div></td>
+            <td><button class="btn btn-primary">Claim</button></td>
+          </tr>
+
+          <tr>
+            <td>4 days ago</td>
+            <td>1 Kronos</td>
+            <td>2.71 Zeus</td>
+            <td>0.00 Zeus</td>
+            <td><div class="pill success-pill">ACTIVE</div></td>
+            <td><button class="btn btn-primary">Claim</button></td>
+          </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="zeusModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <div class="modal-close"><i class="uil uil-multiply"></i></div>
+      <div class="modal-title">
+        <div class="modal-heading silver-text">BONDING STRUCTURE</div>
+        <div class="modal-title-underline">
+          <img src="./assets/images/undline.png" class="">
+        </div>
+      </div>
+    </div>
+    <div class="modal-body">
+      <div class="structure-msg">
+        <div class="msg-subtitle">(This structure is subject to change)</div>
+        <div class="msg-text">
+          <div class="msg-point">DAILY AVAILABLE TOKENS: <span class="msg-value">4287 ZEUS</span></div>
+          <div class="msg-point">CURRENT AVAILABLE TOKENS: <span class="msg-value">4287 ZEUS</span></div>
+          <div class="msg-point">BOND DISCOUNT: <span class="msg-value">20% off</span></div>
+          <div class="msg-point">VESTING PERIOD: <span class="msg-value">7 Days</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("zeusModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("modalBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("modal-close")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+</script>
+</html>

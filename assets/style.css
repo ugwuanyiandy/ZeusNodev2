@@ -931,6 +931,7 @@ canvas {
 .table * * {
     padding: .75rem 1.5rem;
     text-align: start;
+    white-space: nowrap;
 }
 
 .table thead * {
@@ -1791,11 +1792,475 @@ input.referral-text {
     }
 }
 
+.calc-section-title {
+    font-size: 1rem;
+    color: #FFFBFB;
+    margin-bottom: 12px;
+}
+
+.calc-tier-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+}
+@media screen and (max-width: 560px) {
+    .calc-tier-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (min-width: 560px) and (max-width: 1200px) {
+    .calc-tier-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .calc-tier {
+        margin-bottom: 32px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .calc-tier {
+        margin-bottom: 32px;
+    }
+}
+
+.calc-tier .glass-card {
+    text-align: center;
+}
+
+.calc-tier-title {
+    font-size: 1rem;
+    font-family: Ashbury, sans-serif;
+}
+
+.calc-tier-top {
+    margin-bottom: 15px;
+    padding: 24px;
+}
+
+.calc-tier-form {
+    margin-top: 16px;
+}
+
+.calc-form-label {
+    font-size: .75rem;
+    color: #FFFBFB;
+    opacity: .7;
+    display: block;
+    text-align: left;
+}
+
+.label-light {
+    color: #FFFBFB;
+    opacity: 1;
+}
+
+.calc-form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input.calc-form-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: #0E1437;
+    color: #FFFBFB;
+}
+
+input.calc-form-input.readable {
+    background: #292E48;
+    border: none;
+}
+input.calc-form-input.readable:focus {
+    outline: none;
+}
+input.calc-form-input:focus {
+    border: none;
+    outline: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.calc-tier-price {
+}
+
+.calc-tier-price-top {
+    border-bottom: 1px solid #363953;
+    padding: 12px 24px;
+    text-align: right;
+}
+
+.calc-tier-node-price {
+    font-size: 0.85rem;
+    color: #FFFBFB;
+    opacity: .5;
+}
+
+.calc-tier-multiply {
+    color: #FFFBFB;
+    margin-top: 8px;
+}
+
+.calc-tier-price-bottom {
+    padding: 12px 24px;
+    text-align: right;
+}
+
+.calc-tier-sum {
+    font-size: 1.25rem;
+    color: #FFFBFB;
+    font-weight: 500;
+}
 
 
+.calc-earnings {
+    margin-top: 64px;
+}
+
+.calc-earnings-claim {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.calc-earnings .calc-section-title {
+    margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+    .calc-earnings .calc-section-title {
+        margin-bottom: 12px;
+    }
+}
 
 
+.claim-pct {
+    display: flex;
+    align-items: center;
+}
 
+.claim-pct-label {
+    color: #FFFBFB;
+    font-size: .75rem;
+    margin-right: 8px;
+}
+
+.calc-earnings-table .table thead * {
+    background-color: transparent;
+}
+
+.calc-earnings-table .table th {
+    color: #FFFBFB;
+    opacity: .5;
+    font-weight: 500;
+}
+
+.calc-earnings-table .table thead tr {
+    border-bottom: 1px solid #646a98;
+}
+
+.calc-earnings-table .table tbody tr {
+    border: none;
+}
+.calc-earnings-table .table tbody th {
+    border-right: 1px solid #646a98;
+    max-width: 70px;
+    white-space: nowrap;
+}
+@media screen and (max-width: 768px){
+    .calc-earnings-table .table tbody th {
+        max-width: 150px;
+    }
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(18,18,18,0.7); /* Black w/ opacity */
+}
+
+.modal-content {
+    background: linear-gradient(180deg, #121E46 0%, #080B1B 100%);
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 36px;
+    width: 40%;
+    /*height: 40vh;*/
+    overflow: hidden;
+}
+@media screen and (max-width: 768px){
+    .modal-content {
+        width: 80%;
+        padding: 20px;
+    }
+}
+
+.modal-lg .modal-content {
+    width: 65%;
+    height: 60vh;
+}
+@media screen and (max-width: 768px){
+    .modal-lg .modal-content {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+.modal-close {
+    float: right;
+    font-weight: bold;
+    border-radius: 50%;
+    background: #D9D9D9;
+    height: 32px;
+    width: 32px;
+    font-size: 16px;
+    color: #000C74;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 768px){
+    .modal-close {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+    }
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    background: #AFAFAF;
+}
+
+.modal-heading {
+    text-align: center;
+    font-family: Ashbury, sans-serif;
+    font-size: 24px;
+}
+@media screen and (max-width: 768px){
+    .modal-heading {
+        font-size: 1rem;
+    }
+}
+
+.modal-title-underline img {
+    width: 100%;
+}
+
+.modal-body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.invest-guide-body {
+    display: flex;
+    align-items: start;
+    margin-top: 24px;
+    height: 100%;
+}
+
+.invest-guide-map {
+    margin-right: 28px;
+    color: #FFFBFB;
+    border-right: 1px solid #6A7287;
+    padding-right: 32px;
+}
+@media screen and (max-width: 768px){
+    .invest-guide-map {
+        display: none;
+    }
+}
+
+.map-item {
+    font-size: 1rem;
+    margin-bottom: 12px;
+    opacity: .6;
+    cursor: pointer;
+    color: #FFFBFB;
+}
+
+.map-item:hover {
+    opacity: 1;
+}
+
+.invest-guide-content {
+    height: 100%;
+    overflow: auto;
+    padding-bottom: 40px;
+}
+
+.invest-guide-section {
+    margin-bottom: 32px;
+    color: #FFFBFB;
+}
+
+.guide-section-header {
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 100% !important;
+}
+
+.guide-section-body {
+    font-size: .875rem;
+    margin-top: 8px;
+}
+.guide-section-body .guide-body-line {
+    opacity: .6;
+}
+.guide-section-body .btn {
+    opacity: 1 !important;
+    margin-top: 4px;
+}
+
+.guide-body-line {
+    margin-bottom: 4px;
+}
+
+.text-sbold {
+    font-weight: 500;
+}
+
+.node-tabs-box {
+    display: flex;
+    justify-content: center;
+}
+.node-type-tabs {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.node-type {
+    font-size: 1rem;
+    color: #FFFBFB;
+    opacity: .6;
+    cursor: pointer;
+}
+.node-type:hover {
+    opacity: 1;
+    font-weight: 500;
+}
+
+.node-type.active {
+    background-image: linear-gradient(
+            to right,
+                /*#462523 0,*/
+            #cb9b51 0,
+            #f6e27a 45%,
+            #f6f2c0 50%,
+                /*#f6e27a 55%,*/
+            #cb9b51 55%,
+            #f6e27a 100%
+    );
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-weight: 500;
+    opacity: 1;
+}
+
+.node-tab-divider {
+    margin: 0 16px;
+    color: #FFFBFB;
+    opacity: .6;
+}
+
+.node-cost {
+    font-size: .75rem;
+    color: #FFFBFB;
+    margin-top: 24px;
+    text-align: center;
+}
+
+
+.create-node-section {
+    margin-top: 24px;
+    /*width: 400px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-node-section .btn {
+    margin-top: 16px;
+}
+
+
+.bonding-history-table .table tbody tr td{
+    padding-top: 10px;
+}
+
+
+.bonding-header {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.structure-detail {
+    color: #FFFBFB;
+    opacity: .6;
+    cursor: pointer;
+}
+.structure-detail:hover {
+    opacity: 1;
+}
+
+.structure-msg {
+    margin-top: 20px;
+}
+
+.msg-subtitle {
+    color: #FFFBFB;
+    text-align: center;
+    font-weight: 500;
+    font-size: .875rem;
+}
+
+.msg-text {
+    margin-top: 16px;
+    color: #FFFBFB;
+    text-align: center;
+}
+
+.msg-point {
+    margin-bottom: 8px;
+    font-size: .75rem;
+    opacity: .6;
+}
+
+span.msg-value {
+    font-weight: 500;
+    opacity: 1;
+}
+
+.pill {
+    padding: 4px 6px;
+    font-size: .75rem;
+    width: max-content;
+}
+
+.success-pill {
+    background-color: #289F26;
+    color: #d4f1d4;
+}
 
 
 
