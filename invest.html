@@ -96,6 +96,9 @@
 </div>
 
 <div class="main-content">
+  <div class="url-notice">
+    Please ensure you are at the correct url: <i class="uil uil-lock"></i> <span class="url">https://app.zeusfinance.org</span>
+  </div>
   <div class="top-nav">
     <div class="container">
       <button class="btn btn-primary">
@@ -121,6 +124,84 @@
     </div>
 
     <div class="page-section">
+      <div class="node-summary-cards">
+        <div class="node-summary-card glass-card">
+          <div class="summary-card-title">System Total Nodes</div>
+          <div class="summary-card-list">
+            <div class="summary-list-item">
+              <div class="summary-tier">Hercules</div>
+              <div class="summary-value">646</div>
+            </div>
+            <div class="summary-list-item">
+              <div class="summary-tier">Hera</div>
+              <div class="summary-value">1801</div>
+            </div>
+            <div class="summary-list-item">
+              <div class="summary-tier">Zeus</div>
+              <div class="summary-value">334661</div>
+            </div>
+            <div class="summary-list-item">
+              <div class="summary-tier">Kronos</div>
+              <div class="summary-value">1278</div>
+            </div>
+          </div>
+        </div>
+        <div class="node-summary-card glass-card">
+          <div class="summary-card-title">Wallet Total Nodes</div>
+          <div class="summary-card-list">
+            <div class="summary-list-item">
+              <div class="summary-tier">Hercules</div>
+              <div class="summary-value">646</div>
+            </div>
+            <div class="summary-list-item">
+              <div class="summary-tier">Hera</div>
+              <div class="summary-value">1801</div>
+            </div>
+            <div class="summary-list-item">
+              <div class="summary-tier">Zeus</div>
+              <div class="summary-value">334661</div>
+            </div>
+            <div class="summary-list-item">
+              <div class="summary-tier">Kronos</div>
+              <div class="summary-value">1278</div>
+            </div>
+          </div>
+        </div>
+        <div class="node-summary-card glass-card">
+          <div class="summary-card-title">Rewards Available</div>
+          <div class="summary-card-list">
+            <div class="summary-list-item">
+              <div class="summary-tier">Hercules</div>
+              <div class="summary-value">646 <span class="value-currency">ZEUS</span> </div>
+            </div>
+            <div class="summary-list-item">
+              <div class="summary-tier">Hera</div>
+              <div class="summary-value">1801 <span class="value-currency">ZEUS</span> </div>
+            </div>
+            <div class="summary-list-item">
+              <div class="summary-tier">Zeus</div>
+              <div class="summary-value">334661 <span class="value-currency">ZEUS</span> </div>
+            </div>
+            <div class="summary-list-item">
+              <div class="summary-tier">Kronos</div>
+              <div class="summary-value">1278 <span class="value-currency">ZEUS</span> </div>
+            </div>
+          </div>
+        </div>
+        <div class="node-summary-card glass-card">
+          <div class="summary-card-title">Compound Balance</div>
+
+          <div class="compound-balance-value gold-text">0.00 <span class="balance-currency">ZEUS</span></div>
+
+          <div class="summary-card-actions">
+            <button class="btn btn-primary btn-sm">Deposit</button>
+            <button class="btn btn-primary btn-sm">Withdraw(80% tax)</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-section">
       <div class="node-summary glass-card">
         <div class="owned-node-summary">
           <div class="owned-node-title">Owned Nodes</div>
@@ -132,169 +213,216 @@
           <div class="guide-button" id="modalBtn">Investment Guide<i class="uil uil-angle-right"></i></div>
         </div>
 
-        <div class="node-claims">
-          <div class="node-claim-single">
-            <img src="./assets/images/herc.png" class="node-claim-img">
-
-            <div class="tier-claim-title">HERCULES</div>
-            <div class="claim-title-underline">
-              <img src="./assets/images/undlinesm.png">
-            </div>
-
-            <div class="tier-claim-earning">Earn 2.75 Hercules daily</div>
-
-            <div class="node-claim-create">
-              <div class="node-create">Create</div>
-              <div class="node-claim">Claim</div>
-            </div>
+        <div class="node-claims-tiers">
+          <div class="approve-alert">
+            <i class="uil uil-exclamation-triangle"></i> Please approve the contract before creating a node if
+            this is your first interaction with Zeus Node Finance.
+            <button class="btn btn-sm btn-primary">Approve</button>
           </div>
 
-          <div class="node-claim-single">
-            <img src="./assets/images/hera.png" class="node-claim-img">
+          <div class="node-claims">
+            <div class="node-claim-single">
+              <img src="./assets/images/herc.png" class="node-claim-img">
 
-            <div class="tier-claim-title">HERA</div>
-            <div class="claim-title-underline">
-              <img src="./assets/images/undlinesm.png">
+              <div class="tier-claim-title">HERCULES</div>
+              <div class="claim-title-underline">
+                <img src="./assets/images/undlinesm.png">
+              </div>
+
+              <div class="tier-claim-earning">Earn 2.75 Hercules daily</div>
+
+              <div class="node-claim-create">
+                <div class="node-create">Create</div>
+                <div class="node-claim">Compound</div>
+              </div>
             </div>
 
-            <div class="tier-claim-earning">Earn 2.75 Hera daily</div>
+            <div class="node-claim-single">
+              <img src="./assets/images/hera.png" class="node-claim-img">
 
-            <div class="node-claim-create">
-              <div class="node-create">Create</div>
-              <div class="node-claim">Claim</div>
-            </div>
-          </div>
+              <div class="tier-claim-title">HERA</div>
+              <div class="claim-title-underline">
+                <img src="./assets/images/undlinesm.png">
+              </div>
 
-          <div class="node-claim-single">
-            <img src="./assets/images/zeus.png" class="node-claim-img">
+              <div class="tier-claim-earning">Earn 2.75 Hera daily</div>
 
-            <div class="tier-claim-title">ZEUS</div>
-            <div class="claim-title-underline">
-              <img src="./assets/images/undlinesm.png">
-            </div>
-
-            <div class="tier-claim-earning">Earn 2.75 Zeus daily</div>
-
-            <div class="node-claim-create">
-              <div class="node-create">Create</div>
-              <div class="node-claim">Claim</div>
-            </div>
-          </div>
-
-          <div class="node-claim-single">
-            <img src="./assets/images/kron.png" class="node-claim-img">
-
-            <div class="tier-claim-title">KRONOS</div>
-            <div class="claim-title-underline">
-              <img src="./assets/images/undlinesm.png">
+              <div class="node-claim-create">
+                <div class="node-create">Create</div>
+                <div class="node-claim">Compound</div>
+              </div>
             </div>
 
-            <div class="tier-claim-earning">Earn 2.75 Kronos daily</div>
+            <div class="node-claim-single">
+              <img src="./assets/images/zeus.png" class="node-claim-img">
 
-            <div class="node-claim-create">
-              <div class="node-create">Create</div>
-              <div class="node-claim">Claim</div>
+              <div class="tier-claim-title">ZEUS</div>
+              <div class="claim-title-underline">
+                <img src="./assets/images/undlinesm.png">
+              </div>
+
+              <div class="tier-claim-earning">Earn 2.75 Zeus daily</div>
+
+              <div class="node-claim-create">
+                <div class="node-create">Create</div>
+                <div class="node-claim">Compound</div>
+              </div>
+            </div>
+
+            <div class="node-claim-single">
+              <img src="./assets/images/kron.png" class="node-claim-img">
+
+              <div class="tier-claim-title">KRONOS</div>
+              <div class="claim-title-underline">
+                <img src="./assets/images/undlinesm.png">
+              </div>
+
+              <div class="tier-claim-earning">Earn 2.75 Kronos daily</div>
+
+              <div class="node-claim-create">
+                <div class="node-create">Create</div>
+                <div class="node-claim">Compound</div>
+              </div>
             </div>
           </div>
         </div>
+
       </div>
 
       <div class="page-section">
         <div class="node-history-actions">
-          <button class="filter-btn">
-            <i class="uil uil-calendar-alt"></i> Filter Due Date
-          </button>
+          <div class="actions-left">
+            <button class="btn btn-primary">Pay Selected Nodes</button>
+            <button class="btn btn-primary">Claim Selected Nodes</button>
+          </div>
 
-          <button class="btn btn-primary">Claim All</button>
+          <div class="actions-right">
+            <button class="filter-btn">
+              <i class="uil uil-calendar-alt"></i> Filter Due Date
+            </button>
+
+            <button class="btn btn-primary">Claim All</button>
+          </div>
         </div>
 
         <div class="node-history-table table-responsive glass-card">
           <table class="table">
             <thead>
             <tr>
+              <th><input type="checkbox"></th>
               <th>Name</th>
               <th>Tier</th>
-              <th>ROI</th>
-              <th>Status</th>
-              <th>20% Due In</th>
               <th>Created On</th>
-              <th>Action</th>
+              <th>Reward</th>
+              <th>Tax Timer</th>
+              <th>Fee Timer</th>
+              <th>Status</th>
             </tr>
             </thead>
             <tbody>
             <tr>
+              <td><input type="checkbox"></td>
               <td>Kron One</td>
               <td>Kronos</td>
+              <td>20-07-2022</td>
               <td>$247.71</td>
-              <td><div class="status status-progress">In Progress</div></td>
               <td>
                 <div class="countdown">
                   <div class="second-bg"></div>
                   <div class="timer">109 : 43 : 05</div>
                 </div>
               </td>
-              <td>20-07-2022</td>
-              <td><button class="btn btn-primary">Claim</button></td>
+              <td>
+                <div class="countdown">
+                  <div class="second-bg"></div>
+                  <div class="timer">30 : 29 : 12</div>
+                </div>
+              </td>
+              <td><div class="status status-progress">In Progress</div></td>
             </tr>
 
             <tr>
+              <td><input type="checkbox"></td>
               <td>Kron One</td>
               <td>Kronos</td>
+              <td>20-07-2022</td>
               <td>$247.71</td>
-              <td><div class="status status-progress">In Progress</div></td>
               <td>
                 <div class="countdown">
                   <div class="second-bg"></div>
                   <div class="timer">109 : 43 : 05</div>
                 </div>
               </td>
-              <td>20-07-2022</td>
-              <td><button class="btn btn-primary">Claim</button></td>
+              <td>
+                <div class="countdown">
+                  <div class="second-bg"></div>
+                  <div class="timer">30 : 29 : 12</div>
+                </div>
+              </td>
+              <td><div class="status status-progress">In Progress</div></td>
             </tr>
 
             <tr>
+              <td><input type="checkbox"></td>
               <td>Kron One</td>
               <td>Kronos</td>
+              <td>20-07-2022</td>
               <td>$247.71</td>
-              <td><div class="status status-progress">In Progress</div></td>
               <td>
                 <div class="countdown">
                   <div class="second-bg"></div>
                   <div class="timer">109 : 43 : 05</div>
                 </div>
               </td>
-              <td>20-07-2022</td>
-              <td><button class="btn btn-primary">Claim</button></td>
+              <td>
+                <div class="countdown">
+                  <div class="second-bg"></div>
+                  <div class="timer">30 : 29 : 12</div>
+                </div>
+              </td>
+              <td><div class="status status-progress">In Progress</div></td>
             </tr>
 
             <tr>
+              <td><input type="checkbox"></td>
               <td>Kron One</td>
               <td>Kronos</td>
+              <td>20-07-2022</td>
               <td>$247.71</td>
+              <td>
+                <div class="countdown">
+                  <div class="second-bg"></div>
+                  <div class="timer">109 : 43 : 05</div>
+                </div>
+              </td>
+              <td>
+                <div class="countdown">
+                  <div class="second-bg"></div>
+                  <div class="timer">30 : 29 : 12</div>
+                </div>
+              </td>
               <td><div class="status status-complete">Complete</div></td>
-              <td>
-                <div class="countdown">
-                  <div class="second-bg"></div>
-                  <div class="timer">109 : 43 : 05</div>
-                </div>
-              </td>
-              <td>20-07-2022</td>
-              <td><button class="btn btn-primary">Claim</button></td>
             </tr>
 
             <tr>
+              <td><input type="checkbox"></td>
               <td>Kron One</td>
               <td>Kronos</td>
+              <td>20-07-2022</td>
               <td>$247.71</td>
-              <td><div class="status status-complete">Complete</div></td>
               <td>
                 <div class="countdown">
                   <div class="second-bg"></div>
                   <div class="timer">109 : 43 : 05</div>
                 </div>
               </td>
-              <td>20-07-2022</td>
-              <td><button class="btn btn-primary">Claim</button></td>
+              <td>
+                <div class="countdown">
+                  <div class="second-bg"></div>
+                  <div class="timer">30 : 29 : 12</div>
+                </div>
+              </td>
+              <td><div class="status status-complete">Complete</div></td>
             </tr>
 
             </tbody>

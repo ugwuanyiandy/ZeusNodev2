@@ -96,6 +96,9 @@
 </div>
 
 <div class="main-content">
+  <div class="url-notice">
+    Please ensure you are at the correct url: <i class="uil uil-lock"></i> <span class="url">https://app.zeusfinance.org</span>
+  </div>
   <div class="top-nav">
     <div class="container">
       <button class="btn btn-primary">
@@ -121,30 +124,68 @@
     </div>
 
     <div class="page-section">
-      <div class="stake-duration">
-        <div class="duration-title">Staking Duration</div>
-        <div class="staking-times">
-          <div class="duration-button active">All</div>
-          <div class="duration-button">30 Days</div>
-          <div class="duration-button">60 Days</div>
-          <div class="duration-button">90 Days</div>
-        </div>
-      </div>
+<!--      <div class="stake-duration">-->
+<!--        <div class="duration-title">Staking Duration</div>-->
+<!--        <div class="staking-times">-->
+<!--          <div class="duration-button active">All</div>-->
+<!--          <div class="duration-button">30 Days</div>-->
+<!--          <div class="duration-button">60 Days</div>-->
+<!--          <div class="duration-button">90 Days</div>-->
+<!--        </div>-->
+<!--      </div>-->
 
       <div class="staking-summary">
         <div class="stake-total-card glass-card">
           <div class="stake-card-title">Total Staked</div>
           <div class="stake-card-value gold-text">342,109.009 <span class="value-currency">ZEUS</span></div>
-          <div class="stake-card-usd">$142,908.07</div>
+
+          <div class="stake-durations-usd">
+            <div class="stake-duration-usd">
+              <div class="duration-usd-title">No-Lock</div>
+              <div class="duration-amount">$213.90</div>
+            </div>
+            <div class="stake-duration-usd">
+              <div class="duration-usd-title">30 Days</div>
+              <div class="duration-amount">$0.00</div>
+            </div>
+            <div class="stake-duration-usd">
+              <div class="duration-usd-title">60 Days</div>
+              <div class="duration-amount">$0.00</div>
+            </div>
+            <div class="stake-duration-usd">
+              <div class="duration-usd-title">90 Days</div>
+              <div class="duration-amount">$0.00</div>
+            </div>
+          </div>
 
           <div class="stake-emissions">Daily Emissions: 2,250.09 USDC</div>
+
+          <div class="guide-button" id="modalBtn">Investment Guide<i class="uil uil-angle-right"></i></div>
         </div>
 
         <div class="staking-summary-personal">
           <div class="stake-unclaimed-card glass-card">
             <div class="staking-card-title">Unclaimed</div>
             <div class="staking-card-value gold-text">0</div>
-            <div class="stake-card-usd">$0.00</div>
+
+            <div class="stake-durations-usd">
+              <div class="stake-duration-usd">
+                <div class="duration-usd-title">No-Lock</div>
+                <div class="duration-amount">$213.90</div>
+              </div>
+              <div class="stake-duration-usd">
+                <div class="duration-usd-title">30 Days</div>
+                <div class="duration-amount">$0.00</div>
+              </div>
+              <div class="stake-duration-usd">
+                <div class="duration-usd-title">60 Days</div>
+                <div class="duration-amount">$0.00</div>
+              </div>
+              <div class="stake-duration-usd">
+                <div class="duration-usd-title">90 Days</div>
+                <div class="duration-amount">$0.00</div>
+              </div>
+            </div>
 
             <button class="btn btn-primary btn-sm btn-staking-card">
               <i class="uil uil-money-withdrawal"></i> Claim Rewards
@@ -156,7 +197,25 @@
           <div class="my-staking glass-card">
             <div class="staking-card-title">My Stakings</div>
             <div class="staking-card-value gold-text">0</div>
-            <div class="stake-card-usd">$0.00</div>
+
+            <div class="stake-durations-usd">
+              <div class="stake-duration-usd">
+                <div class="duration-usd-title">No-Lock</div>
+                <div class="duration-amount">$0.00</div>
+              </div>
+              <div class="stake-duration-usd">
+                <div class="duration-usd-title">30 Days</div>
+                <div class="duration-amount">$0.00</div>
+              </div>
+              <div class="stake-duration-usd">
+                <div class="duration-usd-title">60 Days</div>
+                <div class="duration-amount">$0.00</div>
+              </div>
+              <div class="stake-duration-usd">
+                <div class="duration-usd-title">90 Days</div>
+                <div class="duration-amount">$0.00</div>
+              </div>
+            </div>
 
             <button class="btn btn-primary btn-sm btn-staking-card">
               <i class="uil uil-money-bill"></i> Buy Zeus
@@ -167,7 +226,7 @@
     </div>
 
     <div class="page-section">
-      <div class="staking-amount">
+      <div class="staking-amount glass-card">
         <div class="stake-toggle">
           <div class="stake-switch active">Stake</div>
           <span class="toggle-divider">|</span>
@@ -175,6 +234,15 @@
         </div>
         <div class="stake-balance">
           Available Balance: <span class="balance-value">0.00 ZEUS</span>
+        </div>
+        <div class="staking-duration">
+          <div class="duration-label">Staking Duration: </div>
+          <div class="duration-options">
+            <div class="duration-option active">No-lock</div>
+            <div class="duration-option"> 30 Days</div>
+            <div class="duration-option"> 60 Days</div>
+            <div class="duration-option"> 90 Days</div>
+          </div>
         </div>
 
         <div class="stake-approve">
@@ -187,7 +255,21 @@
       </div>
 
       <div class="glass-card staking-history">
-        <div class="staking-card-title staking-history-title">Staking History</div>
+        <div class="staking-history-header">
+          <div class="staking-card-title staking-history-title">Staking History</div>
+
+          <div class="staking-history-filter">
+            <label>Filter by:</label>
+            <div class="filter-dropdown">
+              <select class="filter-select">
+                <option value="1">All</option>
+                <option value="2">30 Days</option>
+                <option value="3">60 Days</option>
+                <option value="3">90 Days</option>
+              </select>
+            </div>
+          </div>
+        </div>
         <div class="stake-history-table table-responsive">
           <table class="table">
             <thead>
@@ -205,7 +287,12 @@
               <td>$250</td>
               <td>$27.71</td>
               <td>20-07-2022</td>
-              <td><button class="btn btn-primary">Claim</button></td>
+              <td>
+                <div class="action-btns">
+                  <button class="btn btn-primary">Claim</button>
+                  <button class="filter-btn">Unstake</button>
+                </div>
+              </td>
             </tr>
 
             <tr>
@@ -213,7 +300,12 @@
               <td>$250</td>
               <td>$27.71</td>
               <td>20-07-2022</td>
-              <td><button class="btn btn-primary">Claim</button></td>
+              <td>
+                <div class="action-btns">
+                  <button class="btn btn-primary">Claim</button>
+                  <button class="filter-btn">Unstake</button>
+                </div>
+              </td>
             </tr>
 
             <tr>
@@ -221,7 +313,12 @@
               <td>$250</td>
               <td>$27.71</td>
               <td>20-07-2022</td>
-              <td><button class="btn btn-primary">Claim</button></td>
+              <td>
+                <div class="action-btns">
+                  <button class="btn btn-primary">Claim</button>
+                  <button class="filter-btn">Unstake</button>
+                </div>
+              </td>
             </tr>
 
             <tr>
@@ -229,7 +326,12 @@
               <td>$250</td>
               <td>$27.71</td>
               <td>20-07-2022</td>
-              <td><button class="btn btn-primary">Claim</button></td>
+              <td>
+                <div class="action-btns">
+                  <button class="btn btn-primary">Claim</button>
+                  <button class="filter-btn">Unstake</button>
+                </div>
+              </td>
             </tr>
 
             </tbody>
@@ -238,5 +340,114 @@
       </div>
     </div>
   </div>
+</div>
+
+<!-- Modal -->
+<div id="zeusModal" class="modal modal-lg">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <div class="modal-close"><i class="uil uil-multiply"></i></div>
+      <div class="modal-title">
+        <div class="modal-heading silver-text">INVESTMENT GUIDE</div>
+        <div class="modal-title-underline">
+          <img src="./assets/images/undline.png" class="">
+        </div>
+      </div>
+    </div>
+    <div class="modal-body">
+      <div class="invest-guide-body">
+        <div class="invest-guide-map">
+          <a href="#"><div class="map-item">Fee Structure</div></a>
+          <a href="#"><div class="map-item">Migration</div></a>
+          <a href="#"><div class="map-item">Compounding</div></a>
+          <a href="#"><div class="map-item">Tax System</div></a>
+        </div>
+
+        <div class="invest-guide-content">
+          <div class="invest-guide-section">
+            <div class="guide-section-header" id="fee-structure">Node Monthly Fees Structure <span class="guide-header-extra">(Subject to change)</span></div>
+            <div class="guide-section-body">
+              <div class="guide-body-line">Hercules Node - <span class="text-sbold">No payment</span></div>
+              <div class="guide-body-line">Hera Node - <span class="text-sbold">No payment</span></div>
+              <div class="guide-body-line">Zeus Node - <span class="text-sbold">$1.88 (30 Days payment)</span></div>
+              <div class="guide-body-line">Kronos Node - <span class="text-sbold">$14.06 (30 days payment)</span></div>
+            </div>
+          </div>
+
+          <div class="invest-guide-section">
+            <div class="guide-section-header"><i class="uil uil-exclamation-triangle"></i> Attention</div>
+            <div class="guide-section-body">
+              <div class="guide-body-line">Fees are paid in AVALANCHE (AVAX) token.</div>
+              <div class="guide-body-line">Expired Node Rewards are forfeited to the reward pool</div>
+              <div class="guide-body-line">Paying an expired node fee resets your 15% tax timer</div>
+              <div class="guide-body-line">You cannot fund the compound balance or use the claim all function from a
+                node tier with one or more unpaid fees.</div>
+            </div>
+          </div>
+
+          <div class="invest-guide-section">
+            <div class="guide-section-header" id="migration">V1 Migration Legacy</div>
+            <div class="guide-section-body">
+              <div class="guide-body-line">Use the button below to restore “Compound Balance Tokens” to the new contract.</div>
+              <button class="btn btn-primary">Migrate Compound Balance</button>
+            </div>
+          </div>
+
+          <div class="invest-guide-section">
+            <div class="guide-section-header" id="compounding">How to compound a node</div>
+            <div class="guide-section-body">
+              <div class="guide-body-line">Step 1: Click on the “Deposit” Button.</div>
+              <div class="guide-body-line">Step 2: Select Node Tier Rewards.</div>
+              <div class="guide-body-line">Step 3: Click the “Fund” Button.</div>
+              <div class="guide-body-line">Step 4: Approve transaction.</div>
+              <div class="guide-body-line">Step 5: Wait till “Compound Balance” shows “New Balance”</div>
+              <div class="guide-body-line">Step 6: Enter node name at node tier.</div>
+              <div class="guide-body-line">Step 7: Click the “Compound Node” Button.</div>
+              <div class="guide-body-line">Step 8: Approve Transaction.</div>
+            </div>
+          </div>
+
+          <div class="invest-guide-section">
+            <div class="guide-section-header" id="tax">Tax System</div>
+            <div class="guide-section-body">
+              <div class="guide-body-line">-Less than 20 days - <span class="text-sbold">80% claim tax</span></div>
+              <div class="guide-body-line">-More than 20 days - <span class="text-sbold">15% claim tax</span></div>
+              <div class="guide-body-line">-Claim All button - <span class="text-sbold">80% tax</span></div>
+              <div class="guide-body-line">-Compound, Buy/Sell- <span class="text-sbold">0% tax</span></div>
+              <div class="guide-body-line">-Claim All button will always apply 80% tax, Use
+                <span class="text-sbold">“Claim Selected”</span> for 15% tax when <span class="text-sbold">“15% Active”</span> status shows</div>
+              <button class="btn btn-primary">Claim all rewards (80% tax)</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
 </body>
+<script>
+    // Get the modal
+    var modal = document.getElementById("zeusModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("modalBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("modal-close")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+</script>
 </html>
