@@ -187,7 +187,7 @@
               </div>
             </div>
 
-            <button class="btn btn-primary btn-sm btn-staking-card">
+            <button class="btn btn-primary btn-sm btn-staking-card" id="modalBtn2">
               <i class="uil uil-money-withdrawal"></i> Claim Rewards
             </button>
 
@@ -278,6 +278,7 @@
               <th>Amount</th>
               <th>Reward</th>
               <th>Unlock At</th>
+              <th>Status</th>
               <th>Actions</th>
             </tr>
             </thead>
@@ -287,6 +288,7 @@
               <td>$250</td>
               <td>$27.71</td>
               <td>20-07-2022</td>
+              <td><div class="status status-progress">In Progress</div></td>
               <td>
                 <div class="action-btns">
                   <button class="btn btn-primary">Claim</button>
@@ -300,6 +302,7 @@
               <td>$250</td>
               <td>$27.71</td>
               <td>20-07-2022</td>
+              <td><div class="status status-progress">In Progress</div></td>
               <td>
                 <div class="action-btns">
                   <button class="btn btn-primary">Claim</button>
@@ -313,6 +316,7 @@
               <td>$250</td>
               <td>$27.71</td>
               <td>20-07-2022</td>
+              <td><div class="status status-progress">In Progress</div></td>
               <td>
                 <div class="action-btns">
                   <button class="btn btn-primary">Claim</button>
@@ -326,6 +330,7 @@
               <td>$250</td>
               <td>$27.71</td>
               <td>20-07-2022</td>
+              <td><div class="status status-progress">In Progress</div></td>
               <td>
                 <div class="action-btns">
                   <button class="btn btn-primary">Claim</button>
@@ -428,6 +433,39 @@
   </div>
 
 </div>
+
+<!-- Modal -->
+<div id="zeusModal2" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <div class="modal-close modal-close2"><i class="uil uil-multiply"></i></div>
+      <div class="modal-title">
+        <div class="modal-heading silver-text">CLAIM REWARDS</div>
+        <div class="modal-title-underline">
+          <img src="./assets/images/undline.png" class="">
+        </div>
+      </div>
+    </div>
+    <div class="modal-body">
+      <div class="claim-rewards-modal">
+        <label>Select Duration: </label>
+        <div class="duration-dropdown">
+          <select class="filter-select">
+            <option value="1">All</option>
+            <option value="2">30 Days</option>
+            <option value="3">60 Days</option>
+            <option value="3">90 Days</option>
+          </select>
+        </div>
+
+        <button class="btn btn-primary">Claim</button>
+      </div>
+    </div>
+  </div>
+
+</div>
 </body>
 <script>
     // Get the modal
@@ -447,6 +485,28 @@
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
         modal.style.display = "none";
+    }
+
+</script>
+
+<script>
+    // Get the modal
+    var modal2 = document.getElementById("zeusModal2");
+
+    // Get the button that opens the modal
+    var btn2 = document.getElementById("modalBtn2");
+
+    // Get the <span> element that closes the modal
+    var span2 = document.getElementsByClassName("modal-close2")[0];
+
+    // When the user clicks on the button, open the modal
+    btn2.onclick = function() {
+        modal2.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span2.onclick = function() {
+        modal2.style.display = "none";
     }
 
 </script>

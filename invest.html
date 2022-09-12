@@ -211,13 +211,14 @@
           </div>
 
           <div class="guide-button" id="modalBtn">Investment Guide<i class="uil uil-angle-right"></i></div>
+
+          <button class="btn btn-sm btn-primary mt-12">Approve Contract</button>
         </div>
 
         <div class="node-claims-tiers">
           <div class="approve-alert">
-            <i class="uil uil-exclamation-triangle"></i> Please approve the contract before creating a node if
+            <i class="uil uil-exclamation-triangle"></i>&nbsp;Please approve the contract before creating a node if
             this is your first interaction with Zeus Node Finance.
-            <button class="btn btn-sm btn-primary">Approve</button>
           </div>
 
           <div class="node-claims">
@@ -232,7 +233,7 @@
               <div class="tier-claim-earning">Earn 2.75 Hercules daily</div>
 
               <div class="node-claim-create">
-                <div class="node-create">Create</div>
+                <div class="node-create" id="modalBtn2">Create</div>
                 <div class="node-claim">Compound</div>
               </div>
             </div>
@@ -519,6 +520,43 @@
   </div>
 
 </div>
+
+
+<!-- Modal -->
+<div id="zeusModal2" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <div class="modal-close modal-close2"><i class="uil uil-multiply"></i></div>
+      <div class="modal-title">
+        <div class="modal-heading silver-text">CREATE HERA NODE</div>
+        <div class="modal-title-underline">
+          <img src="./assets/images/undline.png" class="">
+        </div>
+      </div>
+    </div>
+    <div class="modal-body">
+      <div class="node-tabs-box">
+        <div class="node-type-tabs">
+          <div class="node-type active">New</div>
+          <div class="node-tab-divider">|</div>
+          <div class="node-type">Compound</div>
+        </div>
+      </div>
+
+      <div class="node-cost">Node Cost: <span class="node-amount">3.25 AVAX</span></div>
+
+      <div class="create-node-section">
+        <div class="blue-input-box">
+          <input type="text" class="referral-text blue-input" placeholder="Node name">
+        </div>
+        <button class="btn btn-primary"><i class="uil uil-check"></i> Approve</button>
+      </div>
+
+    </div>
+  </div>
+</div>
 </body>
 <script>
     // Get the modal
@@ -538,6 +576,28 @@
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
         modal.style.display = "none";
+    }
+
+</script>
+
+<script>
+    // Get the modal
+    var modal2 = document.getElementById("zeusModal2");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("modalBtn2");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("modal-close2")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function() {
+        modal2.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal2.style.display = "none";
     }
 
 </script>
