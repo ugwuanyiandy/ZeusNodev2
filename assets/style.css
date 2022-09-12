@@ -2562,7 +2562,23 @@ span.msg-value {
     margin-top: 12px;
 }
 
+.footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 32px;
+    color: #FFFBFB;
+}
 
+.footer .container .socials i {
+    margin-right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.footer .container .socials i:hover {
+    color: #8EB7F5;
+}
 
 
 
