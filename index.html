@@ -101,10 +101,24 @@
     </div>
     <div class="top-nav">
       <div class="container">
-        <button class="btn btn-primary">
-          <i class="uil uil-link-h"></i>
-          Connect Wallet
-        </button>
+
+        <div class="wallet-label">
+          <button class="btn btn-primary" id="walletDropdown">
+            <i class="uil uil-link-h"></i>
+            Connect Wallet
+          </button>
+
+          <div class="wallet-list display-none" id="walletOptions">
+            <div class="wallet-list-item">
+              <img src="./assets/images/metamask.png" class="wallet-icon">
+              MetaMask
+            </div>
+            <div class="wallet-list-item">
+              <img src="./assets/images/walletconnect.png" class="wallet-icon">
+              WalletConnect
+            </div>
+          </div>
+        </div>
 
         <button class="btn btn-primary menu-toggle-btn">
           <label for="nav-toggle" class="">
@@ -424,6 +438,15 @@
     </div>
   </div>
 </body>
+<script>
+    function toggleHeaderDrop() {
+        const headerList = document.getElementById('walletOptions');
+        headerList.classList.toggle('display-none');
+    }
+
+    document.querySelector('#walletDropdown').addEventListener('click', toggleHeaderDrop)
+
+</script>
 <script>
     // Get the modal
     var modal = document.getElementById("zeusModal");

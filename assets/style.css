@@ -2580,6 +2580,76 @@ span.msg-value {
     color: #8EB7F5;
 }
 
+.wallet-list {
+    position: absolute;
+    padding: 10px;
+    background: linear-gradient(91.88deg, #2B398E 7.34%, #2F1076 124.99%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 8px;
+    width: 148px;
+    /*display: none;*/
+}
+
+.display-none {
+    display: none;
+}
+
+.wallet-list-item:first-child {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #8EB7F5;
+}
+.wallet-list-item:last-child {
+    padding-top: 10px;
+}
+
+.wallet-list-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #FFFBFB;
+    cursor: pointer;
+}
+
+.wallet-label {
+    /*position: relative;*/
+}
+
+.wallet-icon {
+    width: 20px;
+    margin-right: 8px;
+}
+
+.page-list {
+    margin: 20px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.paginate {
+    display: flex;
+    align-items: center;
+    /*padding: 4px;*/
+}
+
+.page {
+    color: #FFFBFB;
+    padding: 4px 8px;
+    margin: 0 4px;
+    font-size: .875rem;
+    border: 1px solid #0E1437;
+    background-color: #2B398E;
+    cursor: pointer;
+}
+.page:last-child {
+    margin-right: 0;
+}
+.page.active {
+    background-color: #0E1437;
+    border: 2px solid #2B398E;
+}
+
+
 
 
 
