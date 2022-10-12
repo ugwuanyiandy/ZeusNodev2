@@ -204,6 +204,9 @@ li.menu-link.sub-menu.active .sub-menu-body {
     font-size: 14px;
     transition: all 300ms ease-out;
 }
+.sub-menu-content:hover {
+    color: #FFFBFB;
+}
 .sub-menu-link.active .sub-menu-content {
     margin-left: 17px;
 }
