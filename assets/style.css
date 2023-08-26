@@ -240,7 +240,7 @@ li.menu-link.sub-menu.active .sub-menu-body {
     background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
-    overflow-y: scroll;
+    overflow-y: auto;
     padding-bottom: 40px;
 }
 
@@ -1018,7 +1018,7 @@ canvas {
 }
 
 .table-responsive {
-    overflow: scroll;
+    overflow: auto;
 }
 
 .table {
